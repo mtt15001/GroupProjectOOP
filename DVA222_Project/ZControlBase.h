@@ -1,5 +1,6 @@
 #pragma once
 #include "ControlBase.h"
+//#learntoprogram
 class ZControlBase : public ControlBase
 {
 private:
