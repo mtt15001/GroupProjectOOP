@@ -14,4 +14,5 @@ ZControlBase::ZControlBase(int x, int y, int w, int h, int z) : ControlBase(x, y
 
 ZControlBase::~ZControlBase()
 {
+	
 }
