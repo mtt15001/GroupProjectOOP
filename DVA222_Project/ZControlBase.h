@@ -3,11 +3,11 @@
 //#learntoprogram
 class ZControlBase : public ControlBase
 {
-private:
+protected:
 	int z;
 public:
 	ZControlBase();
-	ZControlBase(int x, int y, int w, int h, int z);
+	ZControlBase(int x, int y, int height, int width, int z);
 	~ZControlBase();
 };
 

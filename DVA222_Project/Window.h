@@ -4,7 +4,7 @@
 class Window : public Container , public Label
 {
 public:
-	Window();
+	Window(int x, int y, int height, int width, int z);
 	~Window();
 };
 

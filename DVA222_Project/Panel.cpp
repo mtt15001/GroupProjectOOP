@@ -2,7 +2,7 @@
 #include "Panel.h"
 
 
-Panel::Panel()
+Panel::Panel(int x, int y, int height, int width, int z) : Container(x, y, height, width, z)
 {
 }
 

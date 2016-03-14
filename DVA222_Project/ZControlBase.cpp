@@ -4,14 +4,12 @@
 
 ZControlBase::ZControlBase()
 {
-
+	z = 0;
 }
-ZControlBase::ZControlBase(int x, int y, int w, int h, int z) : ControlBase(x, y, w, h)
+ZControlBase::ZControlBase(int x, int y, int height, int width, int z) : ControlBase(x, y, height, width)
 {
 	this->z = z;
 }
-
-
 ZControlBase::~ZControlBase()
 {
 }
