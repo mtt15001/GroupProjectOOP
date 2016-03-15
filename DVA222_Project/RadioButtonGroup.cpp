@@ -2,7 +2,7 @@
 #include "RadioButtonGroup.h"
 
 
-RadioButtonGroup::RadioButtonGroup(int x, int y, int height, int width, int z, string n) : Container(x, y, height, width, z)
+RadioButtonGroup::RadioButtonGroup(int x, int y, int width, int height, int z, string n) : Container(x, y, width, height, z)
 {
 	title.setText(n);
 }

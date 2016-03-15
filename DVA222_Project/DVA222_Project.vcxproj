@@ -104,7 +104,6 @@
     <ClCompile Include="ControlBase.cpp" />
     <ClCompile Include="ImageBox.cpp" />
     <ClCompile Include="Label.cpp" />
-    <ClCompile Include="Main.cpp" />
     <ClCompile Include="MyButton.cpp" />
     <ClCompile Include="Panel.cpp" />
     <ClCompile Include="RadioButton.cpp" />

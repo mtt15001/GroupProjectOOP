@@ -5,9 +5,9 @@
 Button::Button()
 {
 }
-Button::Button(int x, int y, int height, int width, int z,string n) : ZControlBase(x, y, height, width, z)
+Button::Button(int x, int y, int width, int height, int z,string n) : ZControlBase(x, y, width, height, z)
 {
-	this->setLabel(n);
+	setLabel(n);
 }
 void Button::setLabel(string n)
 {

@@ -7,7 +7,7 @@ protected:
 	Label headLabel;
 public:
 	Button();
-	Button(int x, int y, int height, int width, int z, string n);
+	Button(int x, int y, int width, int height, int z, string n);
 	void setLabel(string n);
 	string getLabel() { return headLabel.getText(); }
 	~Button();

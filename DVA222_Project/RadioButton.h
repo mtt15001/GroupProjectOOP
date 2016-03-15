@@ -4,7 +4,7 @@ class RadioButton : public Button
 {
 public:
 	RadioButton();
-	RadioButton(int x, int y, int height, int width, int z, string n);
+	RadioButton(int x, int y, int width, int height, int z, string n);
 	~RadioButton();
 };
 

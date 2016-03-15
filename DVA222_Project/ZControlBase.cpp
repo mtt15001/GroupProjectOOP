@@ -6,7 +6,7 @@ ZControlBase::ZControlBase()
 {
 	z = 0;
 }
-ZControlBase::ZControlBase(int x, int y, int height, int width, int z) : ControlBase(x, y, height, width)
+ZControlBase::ZControlBase(int x, int y, int width, int height, int z) : ControlBase(x, y, width, height)
 {
 	this->z = z;
 }
