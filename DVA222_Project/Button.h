@@ -1,15 +1,30 @@
 #pragma once
 #include "Label.h"
 #include "ZControlBase.h"
+#include "Graphix.h"
+#include "glut.h"
 class Button : public ZControlBase
 {
 protected:
 	Label headLabel;
+	Bitmap *normal;
+	Bitmap *press;
+	Bitmap *hover;
+	bool hit;
+	bool pressed;
 public:
 	Button();
+	~Button();
 	Button(int x, int y, int height, int width, int z, string n);
+	Button(int x, int y, int height, int width, int z);
 	void setLabel(string n);
 	string getLabel() { return headLabel.getText(); }
-	~Button();
+	virtual void OnLoaded();
+	virtual void OnPaint(void);
+	//virtual void OnKeyboard(unsigned char key, int x, int y);
+	virtual void OnMouseDown(int button, int x, int y);
+	virtual void OnMouseUp(int button, int x, int y);
+	virtual void OnMouseMove(int button, int x, int y);
+	//virtual void OnResize(int width, int height);
 };
 
