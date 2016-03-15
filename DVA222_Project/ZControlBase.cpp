@@ -14,6 +14,7 @@ ZControlBase::~ZControlBase()
 {
 	
 }
+
 void ZControlBase::OnLoaded()
 {
 }
