@@ -4,7 +4,7 @@ class Container : public ZControlBase
 {
 public:
 	Container();
-	Container(int x, int y, int height, int width, int z );
+	Container(int x, int y, int width, int height, int z );
 	~Container();
 protected:
 	ZControlBase *ObjectsArr;

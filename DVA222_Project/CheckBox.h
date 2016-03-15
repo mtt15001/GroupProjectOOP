@@ -5,7 +5,7 @@ class CheckBox :
 {
 public:
 	CheckBox();
-	CheckBox(int x, int y, int height, int width, int z, string n);
+	CheckBox(int x, int y, int width, int height, int z, string n);
 	~CheckBox();
 };
 

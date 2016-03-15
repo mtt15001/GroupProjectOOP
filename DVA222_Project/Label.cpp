@@ -8,12 +8,12 @@ Label::Label()
 	z = 0;
 	text = nullptr;
 }
-Label::Label(int x, int y, int height, int width, int z) : ZControlBase(x, y, height, width, z)
+Label::Label(int x, int y, int width, int height, int z) : ZControlBase(x, y, width, height, z)
 {
 }
-Label::Label(int x, int y, int height, int width, int z,string text)
+Label::Label(int x, int y, int width, int height, int z,string text)
 {
-	Label(x, y, height, width, z);
+	Label(x, y, width, height, z);
 	setText(text);
 }
 Label::~Label()

@@ -7,7 +7,7 @@ protected:
 	int z;
 public:
 	ZControlBase();
-	ZControlBase(int x, int y, int height, int width, int z);
+	ZControlBase(int x, int y, int width, int height, int z);
 	~ZControlBase();
 	virtual void OnLoaded();
 	virtual void OnPaint(void);
