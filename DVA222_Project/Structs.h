@@ -13,11 +13,4 @@ struct Color
 	Color(int r, int g, int b) { this->r = r; this->b = b; this->g = g; }
 };
 
-struct Point
-{
-	int PosX;
-	int PosY;
-
-	Point() { PosX = 0; PosY = 0; }
-	Point(int x, int y) { PosX = x; PosY = y; }
-};
+//Tagit bort Point, den fanns redan i Graphix.h!!! Fredrik

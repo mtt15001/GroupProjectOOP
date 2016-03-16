@@ -10,6 +10,7 @@
 #include "ImageBox.h"
 #include "RadioButton.h"
 #include "CheckBox.h"
+#include "resource.h"
 
 using namespace std;
 

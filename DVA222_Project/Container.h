@@ -10,7 +10,7 @@ public:
 	Container();
 	Container(int x, int y, int width, int height, int z );
 	void AddObject();
-	bool isPressed();
+	//bool isPressed();
 	void SetColor(Color color);
 	~Container();
 protected:

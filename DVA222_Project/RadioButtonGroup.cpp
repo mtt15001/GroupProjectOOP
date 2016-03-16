@@ -22,7 +22,6 @@ void RadioButtonGroup::ButtonPressed(void)
 {
 	int size = Objects.size();
 	for (int i = 0; i < size; i++) {
-		if(Objects.at(i)->
 	}
 
 }

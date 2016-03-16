@@ -17,11 +17,11 @@ void Container::AddObject()
 
 }
 
-bool Container::isPressed()
+/*bool Container::isPressed()
 {
 
 
-}
+}*/
 
 void Container::SetColor(Color color)
 {

@@ -89,6 +89,7 @@
     <ClInclude Include="Panel.h" />
     <ClInclude Include="RadioButton.h" />
     <ClInclude Include="RadioButtonGroup.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Structs.h" />
     <ClInclude Include="targetver.h" />
@@ -115,6 +116,14 @@
     </ClCompile>
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="ZControlBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Button.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Button_Standard.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
