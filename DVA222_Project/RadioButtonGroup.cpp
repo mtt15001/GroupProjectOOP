@@ -11,3 +11,7 @@ RadioButtonGroup::RadioButtonGroup(int x, int y, int width, int height, int z, s
 RadioButtonGroup::~RadioButtonGroup()
 {
 }
+
+void RadioButtonGroup::AddObject(ZControlBase &Obj) {
+	Objects.push_back(&Obj);
+}

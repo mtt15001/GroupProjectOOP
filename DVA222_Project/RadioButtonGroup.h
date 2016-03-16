@@ -4,8 +4,8 @@
 class RadioButtonGroup : public Container
 {
 public:
-	RadioButtonGroup();
 	RadioButtonGroup(int x, int y, int width, int height, int z, string n);
+	void AddObject(ZControlBase &Obj);
 	~RadioButtonGroup();
 private:
 	Label title;
