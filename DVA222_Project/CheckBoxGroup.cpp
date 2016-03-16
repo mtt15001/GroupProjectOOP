@@ -11,3 +11,8 @@ CheckBoxGroup::CheckBoxGroup(int x, int y, int width, int height, int z, string 
 CheckBoxGroup::~CheckBoxGroup()
 {
 }
+
+void CheckBoxGroup::AddObject(ZControlBase *Obj) {
+	Objects.push_back(Obj);
+	counter++;
+}

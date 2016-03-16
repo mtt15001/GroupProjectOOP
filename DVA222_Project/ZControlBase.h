@@ -16,5 +16,6 @@ public:
 	virtual void OnMouseUp(int button, int x, int y);
 	virtual void OnMouseMove(int button, int x, int y);
 	virtual void OnResize(int width, int height);
+	int getZ() { return z; }
 };
 

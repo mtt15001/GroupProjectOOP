@@ -6,6 +6,7 @@ class CheckBoxGroup :
 {
 public:
 	CheckBoxGroup(int x, int y, int width, int height, int z, string n);
+	void AddObject(ZControlBase *Obj);
 	~CheckBoxGroup();
 private:
 	Label title;
