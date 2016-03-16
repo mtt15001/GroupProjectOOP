@@ -6,7 +6,6 @@
 class Button : public ZControlBase
 {
 protected:
-	Label headLabel;
 	Bitmap *normal;
 	Bitmap *press;
 	Bitmap *hover;
@@ -15,10 +14,7 @@ protected:
 public:
 	Button();
 	~Button();
-	Button(int x, int y, int height, int width, int z, string n);
 	Button(int x, int y, int height, int width, int z);
-	void setLabel(string n);
-	string getLabel() { return headLabel.getText(); }
 	virtual void OnLoaded(); // kallas en gång när fönstret laddas
 	virtual void OnPaint(void); // 
 	//virtual void OnKeyboard(unsigned char key, int x, int y);

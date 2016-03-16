@@ -22,7 +22,7 @@ int _tmain(int argc, char** argv)
 
 
 	/*EXEMPEL PÅ INITIERING OCH TILLÄG AV SAKER --->>
-	RadioButtonGroup * radioGroup = new RadioButtonGroup("titel", storlek)
+	RadioButtonGroup * radioGroup = new RadioButtonGroup("titel",storlek)
 	radiogroup->add(new Radiobutton);
 	window->add(radioGroup);*/
 

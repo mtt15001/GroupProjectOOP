@@ -2,14 +2,15 @@
 #include "Container.h"
 #include "Label.h"
 #include <vector>
-class Window : public Container , public Label
+
+using namespace std;
+class Window : public Container
 {
 public:
 	//ZControlbase array fylld med objekt. Initierar sedan ett window i main och skickar in det objektet i InitOGL
-	vector <ZControlBase> Objects;
-	Window(int x, int y, int width, int height, int z);
+	Window(int x, int y, int width, int height, int z,int size);
 
-	void Add();
+	void AddObject(ZControlBase &container);
 
 	~Window();
 };
