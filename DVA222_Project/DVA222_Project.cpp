@@ -10,7 +10,7 @@
 #include "ImageBox.h"
 #include "RadioButton.h"
 #include "CheckBox.h"
-#include "resource.h"
+#include "resource1.h"
 
 using namespace std;
 
@@ -29,7 +29,7 @@ int _tmain(int argc, char** argv)
 	radiogroup->add(new Radiobutton);
 	window->add(radioGroup);*/
 
-	CheckBox *button = new CheckBox(20, 10, 30, 30,0,"hej");
+	CheckBox *button = new CheckBox(20, 10, 400, 100,0,"hej");
 	Label *testlabel = new Label(10, 10, 0, 0, 1, "hej!");
 	InitOGL(argc, argv, button);
 
