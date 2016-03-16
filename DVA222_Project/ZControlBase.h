@@ -1,5 +1,6 @@
 #pragma once
 #include "ControlBase.h"
+#include "Structs.h"
 //#learntoprogram
 class ZControlBase : public ControlBase
 {
@@ -17,5 +18,6 @@ public:
 	virtual void OnMouseMove(int button, int x, int y);
 	virtual void OnResize(int width, int height);
 	int getZ() { return z; }
+	void setZ(int z) { this->z = z; }
 };
 

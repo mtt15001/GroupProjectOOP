@@ -13,7 +13,16 @@ RadioButtonGroup::~RadioButtonGroup()
 {
 }
 
-void RadioButtonGroup::AddObject(ZControlBase *Obj) {
+void RadioButtonGroup::AddObject(RadioButton *Obj) {
 	Objects.push_back(Obj);
 	counter++;
+}
+
+void RadioButtonGroup::ButtonPressed(void)
+{
+	int size = Objects.size();
+	for (int i = 0; i < size; i++) {
+		if(Objects.at(i)->
+	}
+
 }
