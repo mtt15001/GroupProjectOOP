@@ -12,10 +12,3 @@ Container::Container(int x, int y, int width, int height, int z) : ZControlBase(
 Container::~Container()
 {
 }
-
-void Container::ZSort(vector<ZControlBase> vect) {
-	int size = vect.size;
-	for (int i = 0; i < size; i++) {
-
-	}
-}
