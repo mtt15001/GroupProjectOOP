@@ -5,7 +5,8 @@
 class CheckBox : public Button
 {
 private:
-	Label headLabel;
+	Label *headLabel;
+	string n;
 public:
 	CheckBox();
 	CheckBox(int x, int y, int width, int height, int z, string n);
@@ -15,5 +16,6 @@ public:
 	void OnPaint(void);
 	void OnMouseDown(int button, int x, int y);
 	void OnMouseMove(int button, int x, int y);
+	void OnMouseUp(int button, int x, int y);
 };
 

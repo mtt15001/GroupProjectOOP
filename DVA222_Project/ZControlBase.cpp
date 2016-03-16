@@ -12,7 +12,6 @@ ZControlBase::ZControlBase(int x, int y, int width, int height, int z) : Control
 }
 ZControlBase::~ZControlBase()
 {
-	
 }
 
 void ZControlBase::OnLoaded()

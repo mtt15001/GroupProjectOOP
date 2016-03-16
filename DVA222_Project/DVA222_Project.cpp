@@ -8,6 +8,8 @@
 #include "MyButton.h"
 #include "Button.h"
 #include "ImageBox.h"
+#include "RadioButton.h"
+#include "CheckBox.h"
 
 using namespace std;
 
@@ -26,7 +28,8 @@ int _tmain(int argc, char** argv)
 	radiogroup->add(new Radiobutton);
 	window->add(radioGroup);*/
 
-	MyButton *button = new MyButton(20, 40, 150, 200);
+	CheckBox *button = new CheckBox(20, 10, 30, 30,0,"hej");
+	Label *testlabel = new Label(10, 10, 0, 0, 1, "hej!");
 	InitOGL(argc, argv, button);
 
 
