@@ -5,9 +5,12 @@
 Button::Button()
 {
 	hit = pressed = false; 
+	relativePos = Point(0, 0);
 }
-Button::Button(int x, int y, int height, int width, int z, Color color) : ZControlBase(x, y, height, width, z, color)
+Button::Button(int x, int y, int height, int width, Color color) : ZControlBase(x, y, height, width, color)
 {
+	hit = pressed = false;
+	relativePos = Point(0, 0);
 }
 Button::~Button()
 {
@@ -17,7 +20,7 @@ Button::~Button()
 }
 void Button::OnMouseMove(int button,int x, int y)
 {
-	if (x>X && x < X + Width && y>Y && y < Y + Height)
+	if (x>X + relativePos.X && x < X + relativePos.X + Width && y>Y + relativePos.Y && y < Y + relativePos.Y + Height)
 		hit = true;
 	else
 	{
@@ -27,11 +30,11 @@ void Button::OnMouseMove(int button,int x, int y)
 void Button::OnPaint()
 {
 	if (pressed)
-		DrawBitmap(*press, X, Y, Width, Height);
+		DrawBitmap(*press, X + relativePos.X, Y + relativePos.Y, Width, Height);
 	else if (hit)
-		DrawBitmap(*hover, X, Y, Width, Height);
+		DrawBitmap(*hover, X + relativePos.X, Y + relativePos.Y, Width, Height);
 	else
-		DrawBitmap(*normal, X, Y, Width, Height);
+		DrawBitmap(*normal, X + relativePos.X, Y + relativePos.Y, Width, Height);
 
 }
 void Button::OnLoaded()

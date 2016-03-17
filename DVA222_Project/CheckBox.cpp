@@ -9,13 +9,12 @@ CheckBox::CheckBox()
 {
 	hit = pressed = false;
 }
-CheckBox::CheckBox(int x, int y, int width, int height, int z, Color color, string n) : Button(x, y, width, height, z, color)
+CheckBox::CheckBox(int x, int y, int width, int height, Color color, string n) : Button(x, y, width, height, color)
 {
-	headLabel = new Label(x, y, width, height, 1, color);
+	headLabel = new Label(x, y, width, height, color);
 	hit = pressed = false;
 	headLabel->setText(n);
 	headLabel->setLocation(x+100, y);
-	this->n = n;
 }
 CheckBox::~CheckBox()
 {

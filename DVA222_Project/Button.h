@@ -9,12 +9,13 @@ protected:
 	Bitmap *normal;
 	Bitmap *press;
 	Bitmap *hover;
+public:
 	bool hit;
 	bool pressed;
-public:
+
 	Button();
 	~Button();
-	Button(int x, int y, int height, int width, int z, Color color);
+	Button(int x, int y, int height, int width, Color color);
 	virtual void OnLoaded(); // kallas en gång när fönstret laddas
 	virtual void OnPaint(void); // 
 	//virtual void OnKeyboard(unsigned char key, int x, int y);

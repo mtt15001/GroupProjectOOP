@@ -11,6 +11,14 @@
 #include "RadioButton.h"
 #include "CheckBox.h"
 #include "resource1.h"
+#include "RadioButtonGroup.h"
+#include "CheckBoxGroup.h"
+#include "Panel.h"
+#include "Container.h"
+#include "Button.h"
+#include "CheckBox.h"
+#include "CheckBoxGroup.h"
+#include "Window.h"
 
 using namespace std;
 
@@ -33,9 +41,11 @@ int _tmain(int argc, char** argv)
 	MyColo.g = 255;
 	MyColo.r = 255;
 
-	RadioButton *button = new RadioButton(20, 10, 400, 100,0,MyColo,"hej");
+	RadioButtonGroup *RBGroup = new RadioButtonGroup(320, 40, 300, 150, Color(100, 255, 255), "CheckBoxGroup1");
+	RBGroup->AddObject(new RadioButton(10, 10, 20, 20, Color(0,0,0), "RadioButtonTest1"));
+	RadioButton *button = new RadioButton(20, 10, 400, 100,MyColo,"hej");
 	MyButton *mmh = new MyButton(40, 40, 200, 100);
-	InitOGL(argc, argv, button);
+	InitOGL(argc, argv, RBGroup);
 
 
 

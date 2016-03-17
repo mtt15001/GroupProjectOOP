@@ -6,10 +6,9 @@ class CheckBox : public Button
 {
 private:
 	Label *headLabel;
-	string n;
 public:
 	CheckBox();
-	CheckBox(int x, int y, int width, int height, int z, Color color, string n);
+	CheckBox(int x, int y, int width, int height, Color color, string n);
 	~CheckBox();
 
 	void OnLoaded(); 

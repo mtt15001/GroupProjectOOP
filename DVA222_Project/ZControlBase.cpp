@@ -6,9 +6,8 @@ ZControlBase::ZControlBase()
 {
 	z = 0;
 }
-ZControlBase::ZControlBase(int x, int y, int width, int height, int z, Color color) : ControlBase(x, y, width, height)
+ZControlBase::ZControlBase(int x, int y, int width, int height, Color color) : ControlBase(x, y, width, height)
 {
-	this->z = z;
 	SetColor(color);
 	relativePos = Point(0, 0);
 }

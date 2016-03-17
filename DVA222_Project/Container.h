@@ -9,7 +9,7 @@ class Container : public ZControlBase
 public:
 	Container();
 	~Container();
-	Container(int x, int y, int width, int height, int z,Color c);
+	Container(int x, int y, int width, int height, Color c);
 
 	void AddObject(ZControlBase *obj);
 

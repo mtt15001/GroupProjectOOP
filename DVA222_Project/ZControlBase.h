@@ -13,7 +13,7 @@ protected:
 	Point relativePos;
 public:
 	ZControlBase();
-	ZControlBase(int x, int y, int width, int height, int z, Color color);
+	ZControlBase(int x, int y, int width, int height, Color color);
 	~ZControlBase();
 
 	Point getRelativePos();
