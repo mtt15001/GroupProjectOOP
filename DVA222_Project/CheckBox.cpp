@@ -2,6 +2,7 @@
 #include "CheckBox.h"
 #include "Graphix.h"
 #include "glut.h"
+#include "resource1.h"
 
 
 CheckBox::CheckBox()
@@ -24,9 +25,9 @@ CheckBox::~CheckBox()
 }
 void CheckBox::OnLoaded()
 {
-	normal = new Bitmap("ButtonNorm.bmp");
-	press = new Bitmap("ButtonPressed.bmp");
-	hover = new Bitmap("ButtonHover.bmp");
+	normal = new Bitmap("Button_Standard.bmp");
+	press = new Bitmap("Button_Pressed.bmp");
+	hover = new Bitmap("Button_Hover.bmp");
 }
 
 void CheckBox::OnPaint(void)
