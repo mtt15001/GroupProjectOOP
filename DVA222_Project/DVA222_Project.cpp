@@ -28,9 +28,13 @@ int _tmain(int argc, char** argv)
 	RadioButtonGroup * radioGroup = new RadioButtonGroup("titel",storlek)
 	radiogroup->add(new Radiobutton);
 	window->add(radioGroup);*/
+	Color MyColo;
+	MyColo.b = 255;
+	MyColo.g = 255;
+	MyColo.r = 255;
 
-	CheckBox *button = new CheckBox(20, 10, 400, 100,0,"hej");
-	Label *testlabel = new Label(10, 10, 0, 0, 1, "hej!");
+	RadioButton *button = new RadioButton(20, 10, 400, 100,0,MyColo,"hej");
+	MyButton *mmh = new MyButton(40, 40, 200, 100);
 	InitOGL(argc, argv, button);
 
 

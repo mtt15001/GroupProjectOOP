@@ -9,7 +9,7 @@ private:
 	string n;
 public:
 	CheckBox();
-	CheckBox(int x, int y, int width, int height, int z, string n);
+	CheckBox(int x, int y, int width, int height, int z, Color color, string n);
 	~CheckBox();
 
 	void OnLoaded(); 

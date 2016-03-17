@@ -2,14 +2,17 @@
 #include "Window.h"
 
 
-Window::Window(int x, int y, int width, int height, int z,int size = 10) : Container(x, y, width, height, z)
+Window::Window(int x, int y, int width, int height,Color background,Color border,string Title) : Container(x, y, width, height, z, background)
 {
-	Objects.reserve(size);
+	this->z = 0;
 }
 Window::~Window()
 {
 }
-void Window::AddObject(ZControlBase &obj)
+void Window::OnMouseMove(int button, int x, int y)
 {
-	
+}
+void Window::OnMouseUp(int button, int x, int y)
+{
+
 }

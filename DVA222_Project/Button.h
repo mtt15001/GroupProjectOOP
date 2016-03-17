@@ -14,7 +14,7 @@ protected:
 public:
 	Button();
 	~Button();
-	Button(int x, int y, int height, int width, int z);
+	Button(int x, int y, int height, int width, int z, Color color);
 	virtual void OnLoaded(); // kallas en gång när fönstret laddas
 	virtual void OnPaint(void); // 
 	//virtual void OnKeyboard(unsigned char key, int x, int y);

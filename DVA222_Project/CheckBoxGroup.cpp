@@ -2,7 +2,7 @@
 #include "CheckBoxGroup.h"
 
 
-CheckBoxGroup::CheckBoxGroup(int x, int y, int width, int height, int z, string n) : Container(x, y, width, height, z)
+CheckBoxGroup::CheckBoxGroup(int x, int y, int width, int height, int z,Color color, string n) : Container(x, y, width, height, z, color)
 {
 	title.setText(n);
 }

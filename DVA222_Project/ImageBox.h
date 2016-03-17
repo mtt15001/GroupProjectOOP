@@ -9,7 +9,7 @@ private:
 	Bitmap* picture;
 public:
 	ImageBox();
-	ImageBox(int x, int y, int width, int height,int z);
+	ImageBox(int x, int y, int width, int height,int z, Color color);
 	~ImageBox();
 	void OnLoaded();
 	void OnPaint(void);

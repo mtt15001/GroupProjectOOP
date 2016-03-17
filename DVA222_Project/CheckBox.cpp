@@ -9,9 +9,9 @@ CheckBox::CheckBox()
 {
 	hit = pressed = false;
 }
-CheckBox::CheckBox(int x, int y, int width, int height, int z, string n) : Button(x, y, width, height, z)
+CheckBox::CheckBox(int x, int y, int width, int height, int z, Color color, string n) : Button(x, y, width, height, z, color)
 {
-	headLabel = new Label(x, y, width, height, 1);
+	headLabel = new Label(x, y, width, height, 1, color);
 	hit = pressed = false;
 	headLabel->setText(n);
 	headLabel->setLocation(x+100, y);
@@ -26,7 +26,7 @@ CheckBox::~CheckBox()
 void CheckBox::OnLoaded()
 {
 	normal = new Bitmap("Button_Standard.bmp");
-	press = new Bitmap("Button_Pressed.bmp");
+	press = new Bitmap("Button_Hover.bmp");
 	hover = new Bitmap("Button_Hover.bmp");
 }
 

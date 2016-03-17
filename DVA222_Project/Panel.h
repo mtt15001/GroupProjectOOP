@@ -3,8 +3,7 @@
 class Panel : public Container
 {
 public:
-	Panel(){}
-	Panel(int x, int y, int width, int height, int z);
+	Panel(int x, int y, int width, int height, int z, Color color);
 	~Panel();
 };
 

@@ -4,7 +4,7 @@
 ImageBox::ImageBox()
 {
 }
-ImageBox::ImageBox(int x, int y,int width,int height,int z) : ZControlBase(x,y,width,height,z)
+ImageBox::ImageBox(int x, int y,int width,int height,int z, Color color) : ZControlBase(x,y,width,height,z, color)
 {
 }
 ImageBox::~ImageBox()

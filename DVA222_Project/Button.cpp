@@ -6,7 +6,7 @@ Button::Button()
 {
 	hit = pressed = false; 
 }
-Button::Button(int x, int y, int height, int width, int z) : ZControlBase(x, y, height, width, z)
+Button::Button(int x, int y, int height, int width, int z, Color color) : ZControlBase(x, y, height, width, z, color)
 {
 }
 Button::~Button()

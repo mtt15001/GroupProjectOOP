@@ -7,10 +7,10 @@ Label::Label()
 {
 	z = 0;
 }
-Label::Label(int x, int y, int width, int height, int z) : ZControlBase(x, y, width, height, z)
+Label::Label(int x, int y, int width, int height, int z, Color color) : ZControlBase(x, y, width, height, z, color)
 {
 }
-Label::Label(int x, int y, int width, int height, int z,string text) : ZControlBase(x+100,y,width,height,z)
+Label::Label(int x, int y, int width, int height, int z, Color color, string text) : ZControlBase(x+100,y,width,height,z, color)
 {
 	setText(text);
 }
@@ -26,6 +26,6 @@ void Label::setLocation(int x, int y)
 }
 void Label::OnPaint(void)
 {
-	SetColor(0, 0, 0);
+	SetColor(color);
 	DrawString(text,this->X+10,this->Y+45);
 }

@@ -6,32 +6,32 @@ ZControlBase::ZControlBase()
 {
 	z = 0;
 }
-ZControlBase::ZControlBase(int x, int y, int width, int height, int z) : ControlBase(x, y, width, height)
+ZControlBase::ZControlBase(int x, int y, int width, int height, int z, Color color) : ControlBase(x, y, width, height)
 {
 	this->z = z;
+	SetColor(color);
+	relativePos = Point(0, 0);
 }
 ZControlBase::~ZControlBase()
 {
 }
+void ZControlBase::SetColor(Color c)
+{
+	color.r = c.r;
+	color.b = c.b;
+	color.g = c.g;
+}
 
-void ZControlBase::OnLoaded()
+bool ZControlBase::CompareZ(ZControlBase* first, ZControlBase* second)
 {
+	return first->z > second->z ? true : false;
 }
-void ZControlBase::OnPaint(void)
+Point ZControlBase::getRelativePos()
 {
+	return relativePos;
 }
-void ZControlBase::OnKeyboard(unsigned char key, int x, int y)
+void ZControlBase::setRelativePos(Point p)
 {
-}
-void ZControlBase::OnMouseDown(int button, int x, int y)
-{
-}
-void ZControlBase::OnMouseUp(int button, int x, int y)
-{
-}
-void ZControlBase::OnMouseMove(int button, int x, int y)
-{
-}
-void ZControlBase::OnResize(int width, int height)
-{
+	relativePos.X = p.X;
+	relativePos.Y = p.Y;
 }

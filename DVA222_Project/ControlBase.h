@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <stdlib.h>
-
+#include "stdafx.h"
 #include "glut.h"
 
 using namespace std;

@@ -6,7 +6,7 @@ RadioButton::RadioButton()
 {
 	hit = pressed = false;
 }
-RadioButton::RadioButton(int x, int y, int width, int height, int z, string n) : Button(x,y,width,height,z)
+RadioButton::RadioButton(int x, int y, int width, int height, int z, Color color, string n) : Button(x,y,width,height,z, color)
 {
 	hit = pressed = false;
 }
@@ -37,9 +37,9 @@ void RadioButton::OnPaint()
 }
 void RadioButton::OnLoaded()
 {
-	normal = new Bitmap("ButtonNorm.bmp");
-	hover = new Bitmap("ButtonHover.bmp");
-	press = new Bitmap("ButtonPressed.bmp");
+	normal = new Bitmap("Button_Norm.bmp");
+	hover = new Bitmap("Button_Hover.bmp");
+	press = new Bitmap("Button_Pressed.bmp");
 }
 void RadioButton::OnMouseDown(int button, int x, int y)
 {

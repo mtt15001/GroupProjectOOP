@@ -7,7 +7,7 @@ class RadioButton : public Button
 {
 public:
 	RadioButton();
-	RadioButton(int x, int y, int width, int height, int z, string n);
+	RadioButton(int x, int y, int width, int height, int z, Color color, string n);
 	~RadioButton();
 	bool isPressed() { return pressed; }
 	void OnLoaded();

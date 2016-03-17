@@ -128,15 +128,4 @@
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\Bitmaps_Project\Button_Pressed.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="..\..\Bitmaps_Project\Button_Standard.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="..\..\Bitmaps_Project\Button_Hover.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-  </ItemGroup>
 </Project>
