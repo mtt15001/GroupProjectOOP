@@ -128,4 +128,66 @@
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Bitmap_Resources\Button_Hover.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\Button_Pressed.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\Button_Standard.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\Changesize_Hover.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\Changesize_Pressed.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\Changesize_Standard.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\Checkbox_Checked.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\Checkbox_Hover.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Button_Standard.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Button_Pressed.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Button_Hover.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\Checkbox_Unchecked.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\Close_Hover.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\Close_Standard.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\Minimize_Hover.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\Minimize_Standard.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\Picture.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\RadioButton_Checked.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\RadioButton_Hover.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\Bitmap_Resources\RadioButton_Unchecked.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>

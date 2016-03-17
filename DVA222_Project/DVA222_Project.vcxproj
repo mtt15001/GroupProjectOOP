@@ -120,6 +120,28 @@
   <ItemGroup>
     <ResourceCompile Include="MyResources.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Bitmap_Resources\Button_Hover.bmp" />
+    <Image Include="..\..\Bitmap_Resources\Button_Pressed.bmp" />
+    <Image Include="..\..\Bitmap_Resources\Button_Standard.bmp" />
+    <Image Include="..\..\Bitmap_Resources\Changesize_Hover.bmp" />
+    <Image Include="..\..\Bitmap_Resources\Changesize_Pressed.bmp" />
+    <Image Include="..\..\Bitmap_Resources\Changesize_Standard.bmp" />
+    <Image Include="..\..\Bitmap_Resources\Checkbox_Checked.bmp" />
+    <Image Include="..\..\Bitmap_Resources\Checkbox_Hover.bmp" />
+    <Image Include="..\..\Bitmap_Resources\Checkbox_Unchecked.bmp" />
+    <Image Include="..\..\Bitmap_Resources\Close_Hover.bmp" />
+    <Image Include="..\..\Bitmap_Resources\Close_Standard.bmp" />
+    <Image Include="..\..\Bitmap_Resources\Minimize_Hover.bmp" />
+    <Image Include="..\..\Bitmap_Resources\Minimize_Standard.bmp" />
+    <Image Include="..\..\Bitmap_Resources\Picture.bmp" />
+    <Image Include="..\..\Bitmap_Resources\RadioButton_Checked.bmp" />
+    <Image Include="..\..\Bitmap_Resources\RadioButton_Hover.bmp" />
+    <Image Include="..\..\Bitmap_Resources\RadioButton_Unchecked.bmp" />
+    <Image Include="Button_Hover.bmp" />
+    <Image Include="Button_Pressed.bmp" />
+    <Image Include="Button_Standard.bmp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

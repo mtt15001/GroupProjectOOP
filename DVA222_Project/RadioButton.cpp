@@ -43,9 +43,9 @@ void RadioButton::OnPaint()
 }
 void RadioButton::OnLoaded()
 {
-	normal = new Bitmap("ButtonNorm.bmp");
-	hover = new Bitmap("ButtonHover.bmp");
-	press = new Bitmap("ButtonPressed.bmp");
+	normal = new Bitmap("Button_Standard.bmp");
+	hover = new Bitmap("Button_Hover.bmp");
+	press = new Bitmap("Picture.bmp");
 }
 void RadioButton::OnMouseDown(int button, int x, int y)
 {
