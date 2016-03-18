@@ -7,12 +7,15 @@ Label::Label()
 {
 	z = 0;
 }
-Label::Label(int x, int y, int width, int height, Color color) : ZControlBase(x, y, width, height, color)
+Label::Label(int x, int y, string n) : ZControlBase(x, y, 0, 0, Color())
 {
+	relativePos = Point(0, 0);
+	text = n;
 }
-Label::Label(int x, int y, int width, int height, Color color, string text) : ZControlBase(x+100,y,width,height, color)
+Label::Label(int x, int y, Color color, string n) : ZControlBase(x,y,0,0, color)
 {
-	setText(text);
+	relativePos = Point(0, 0);
+	text = n;
 }
 Label::~Label()
 {
@@ -21,11 +24,18 @@ void Label::setText(string n)
 {
 	text = n;
 }
-void Label::setLocation(int x, int y)
+/*void Label::setPosition(int x, int y)
 {
+	this->X = x;
+	this->Y = y;
+}*/
+void Label::DrawLabel()
+{
+	glColor3f(color.r / 255.0, color.g / 255.0, color.b / 255.0);
+
+	DrawString(text, X + relativePos.X, Y + relativePos.Y);
 }
-void Label::OnPaint(void)
+void Label::OnPaint()
 {
-	SetColor(color);
-	DrawString(text,this->X+10,this->Y+45);
+	this->DrawLabel();
 }

@@ -8,13 +8,13 @@ private:
 	string text;
 public:
 	Label();
-	Label(int x, int y, int width, int height, Color color);
-	Label(int x, int y, int width, int height, Color color, string text);
+	Label(int x, int y, string n);
+	Label(int x, int y,Color color, string text);
 	~Label();
+	void DrawLabel();
+	void OnPaint();
 	void setText(string n);
-	string &getText() {return text; }
-	void setLocation(int x, int y);
-	void OnPaint(void);
-
+	void setPosition(int x, int y);
+	string getText() { return text; }
 };
 

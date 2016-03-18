@@ -8,10 +8,8 @@ RadioButton::RadioButton()
 }
 RadioButton::RadioButton(int x, int y, int width, int height, Color color, string n) : Button(x,y,width,height, color)
 {
-	headLabel = new Label(x, y, width, height, color);
 	hit = pressed = false;
-	headLabel->setText(n);
-	headLabel->setLocation(x + 100, y);
+	headLabel = new Label(X + Width + 3, Y + Height, color, n);
 	relativePos = Point(0, 0);
 }
 RadioButton::~RadioButton()
@@ -38,14 +36,15 @@ void RadioButton::OnPaint()
 	else
 		DrawBitmap(*normal, X + relativePos.X, Y + relativePos.Y, Width, Height);
 
+	headLabel->setRelativePos(this->getRelativePos());
 	headLabel->OnPaint();
 	
 }
 void RadioButton::OnLoaded()
 {
-	normal = new Bitmap("Button_Standard.bmp");
-	hover = new Bitmap("Button_Hover.bmp");
-	press = new Bitmap("Picture.bmp");
+	normal = new Bitmap("ButtonNorm.bmp");
+	hover = new Bitmap("ButtonHover.bmp");
+	press = new Bitmap("ButtonPressed.bmp");
 }
 void RadioButton::OnMouseDown(int button, int x, int y)
 {

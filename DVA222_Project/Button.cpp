@@ -36,6 +36,7 @@ void Button::OnPaint()
 	else
 		DrawBitmap(*normal, X + relativePos.X, Y + relativePos.Y, Width, Height);
 
+
 }
 void Button::OnLoaded()
 {

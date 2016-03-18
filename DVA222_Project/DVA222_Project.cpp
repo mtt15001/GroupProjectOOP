@@ -36,14 +36,18 @@ int _tmain(int argc, char** argv)
 	RadioButtonGroup * radioGroup = new RadioButtonGroup("titel",storlek)
 	radiogroup->add(new Radiobutton);
 	window->add(radioGroup);*/
-	Color MyColo;
-	MyColo.b = 255;
-	MyColo.g = 255;
-	MyColo.r = 255;
+	Color MyColor;
+	MyColor.b = 255;
+	MyColor.g = 255;
+	MyColor.r = 255;
 
-	RadioButtonGroup *RBGroup = new RadioButtonGroup(320, 40, 300, 150, Color(100, 255, 255), "CheckBoxGroup1");
-	RBGroup->AddObject(new RadioButton(10, 10, 20, 20, Color(0,0,0), "RadioButtonTest1"));
-	RadioButton *button = new RadioButton(20, 10, 400, 100,MyColo,"hej");
+	RadioButtonGroup *RBGroup = new RadioButtonGroup(320, 40, 300, 150, Color(100, 255, 255), "RadioBoxGroup1");
+	RBGroup->AddObject(new RadioButton(10, 10, 20, 20, Color(0, 0, 0), "RadioButtonTest1"));
+	RBGroup->AddObject(new RadioButton(10, 35, 20, 20, Color(0, 0, 0), "RadioButton2.txt"));
+	RBGroup->AddObject(new RadioButton(10, 60, 20, 20, Color(0, 0, 0), "RadioButton2.txt"));
+	RBGroup->AddObject(new RadioButton(10, 85, 20, 20, Color(0, 0, 0), "RadioButton2.txt"));
+	RBGroup->AddObject(new RadioButton(10, 110, 20, 20, Color(0, 0, 0), "RadioButton2.txt"));
+	RadioButton *button = new RadioButton(20, 10, 400, 100,MyColor,"hej");
 	MyButton *mmh = new MyButton(40, 40, 200, 100);
 	InitOGL(argc, argv, RBGroup);
 
