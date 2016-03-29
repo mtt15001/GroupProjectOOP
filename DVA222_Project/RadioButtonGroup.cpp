@@ -25,18 +25,23 @@ void RadioButtonGroup::AddObject(RadioButton* obj)
 
 void RadioButtonGroup::OnPaint() {
 	glColor3f(0 / 255, 0 / 255, 0 / 255);
+	
+	/*
+	Label test(X, Y, title.getText());
+	test.DrawLabel();
+	*/
 	FillRectangle(X + relativePos.X, Y + relativePos.Y, Width, Height);
 	glColor3f(color.r / 255.0, color.g / 255.0, color.b / 255.0);
 	FillRectangle(X + relativePos.X + 1, Y + relativePos.Y + 1, Width - 2, Height - 2);
 
-	/*for (size_t i = 0; i < Objects.size(); i++) 
+	/*for (size_t i = 0; i < Objects.size(); i++)
 	{
 		Objects.at(i)->setRelativePos(Point(this->X + relativePos.X, this->Y + relativePos.Y));
 		Objects.at(i)->OnPaint();
 	}*/
 	Container::OnPaint();
 
-	DrawString(title.getText(), X + relativePos.X + 5, Y + relativePos.Y + 14);
+	DrawString("Move you fucking label", Y + relativePos.Y, X + relativePos.X);
 }
 
 void RadioButtonGroup::OnMouseDown(int button, int x, int y) {

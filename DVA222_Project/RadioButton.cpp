@@ -36,7 +36,7 @@ void RadioButton::OnPaint()
 	else
 		DrawBitmap(*normal, X + relativePos.X, Y + relativePos.Y, Width, Height);
 
-	headLabel->setRelativePos(this->getRelativePos());
+	headLabel->setRelativePos(getRelativePos());
 	headLabel->OnPaint();
 	
 }
