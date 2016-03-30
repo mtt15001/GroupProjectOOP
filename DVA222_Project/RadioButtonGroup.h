@@ -12,6 +12,6 @@ public:
 	void OnMouseDown(int button, int x, int y);
 	~RadioButtonGroup();
 private:
-	Label title;
+	Label *title;
 	int indexOfPressed;
 };

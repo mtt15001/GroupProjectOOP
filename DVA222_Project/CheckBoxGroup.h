@@ -12,5 +12,5 @@ public:
 	void OnMouseDown(int button, int x, int y);
 	~CheckBoxGroup();
 private:
-	Label title;
+	Label *title;
 };

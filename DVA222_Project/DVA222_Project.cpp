@@ -41,7 +41,7 @@ int _tmain(int argc, char** argv)
 	MyColor.g = 255;
 	MyColor.r = 255;
 
-	RadioButtonGroup *RBGroup = new RadioButtonGroup(320, 40, 300, 150, Color(100, 255, 255), "RadioBoxGroup1");
+	RadioButtonGroup *RBGroup = new RadioButtonGroup(320, 100, 300, 150, Color(100, 255, 255), "RadioBoxGroup1");
 	RBGroup->AddObject(new RadioButton(10, 10, 20, 20, Color(0, 0, 0), "RadioButtonTest1"));
 	RBGroup->AddObject(new RadioButton(10, 35, 20, 20, Color(0, 0, 0), "RadioButton2.txt"));
 	RBGroup->AddObject(new RadioButton(10, 60, 20, 20, Color(0, 0, 0), "RadioButton2.txt"));

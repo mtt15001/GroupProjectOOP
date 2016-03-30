@@ -9,7 +9,7 @@ RadioButton::RadioButton()
 RadioButton::RadioButton(int x, int y, int width, int height, Color color, string n) : Button(x,y,width,height, color)
 {
 	hit = pressed = false;
-	headLabel = new Label(X + Width + 3, Y + Height, color, n);
+	headLabel = new Label(X + Width, Y + Height - 5, color, n);
 	relativePos = Point(0, 0);
 }
 RadioButton::~RadioButton()

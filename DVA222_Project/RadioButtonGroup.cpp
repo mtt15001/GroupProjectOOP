@@ -8,7 +8,7 @@ RadioButtonGroup::RadioButtonGroup()
 }
 RadioButtonGroup::RadioButtonGroup(int x, int y, int width, int height, Color color, string n) : Container(x, y, width, height, color)
 {
-	title.setText(n);
+	title = new Label(x, y, Color(), n);
 	counter = 0;
 	indexOfPressed = -1;
 }
@@ -21,15 +21,12 @@ RadioButtonGroup::~RadioButtonGroup()
 void RadioButtonGroup::AddObject(RadioButton* obj)
 {
 	Objects.push_back(obj);
+	counter++;
 }
 
 void RadioButtonGroup::OnPaint() {
 	glColor3f(0 / 255, 0 / 255, 0 / 255);
 	
-	/*
-	Label test(X, Y, title.getText());
-	test.DrawLabel();
-	*/
 	FillRectangle(X + relativePos.X, Y + relativePos.Y, Width, Height);
 	glColor3f(color.r / 255.0, color.g / 255.0, color.b / 255.0);
 	FillRectangle(X + relativePos.X + 1, Y + relativePos.Y + 1, Width - 2, Height - 2);
@@ -41,7 +38,7 @@ void RadioButtonGroup::OnPaint() {
 	}*/
 	Container::OnPaint();
 
-	DrawString("Move you fucking label", Y + relativePos.Y, X + relativePos.X);
+	title->OnPaint();
 }
 
 void RadioButtonGroup::OnMouseDown(int button, int x, int y) {

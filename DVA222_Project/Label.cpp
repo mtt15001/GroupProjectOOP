@@ -33,7 +33,7 @@ void Label::DrawLabel()
 {
 	glColor3f(color.r / 255.0, color.g / 255.0, color.b / 255.0);
 
-	DrawString(text, Y + relativePos.Y, X + relativePos.X);
+	DrawString(text, Y + relativePos.Y, X + relativePos.X + 10);
 }
 void Label::OnPaint()
 {
