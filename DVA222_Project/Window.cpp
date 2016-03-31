@@ -4,10 +4,10 @@
 
 Window::Window(int x, int y, int width, int height, Color background, Color border, string Title) : Container(x, y, width, height, background)
 {
-	this->z = 0;
-	this->title.setText(Title);
+	z = 0;
+	title = new Label(x , y, Color(50, 50, 200), Title);
 	borderPressed = false;
-	this->borderColor = border;
+	borderColor = border;
 }
 Window::~Window()
 {
@@ -85,16 +85,13 @@ void Window::OnPaint(void)
 	glColor3f(color.r / 255.0, color.g / 255.0, color.b / 255.0);
 	FillRectangle(X + relativePos.X + 1, Y + relativePos.Y + 1, Width - 2, Height - 2);
 
-	for (int i = 0; i < Objects.size(); i++)
-	{
-		Objects.at(i)->setRelativePos(Point(this->X + relativePos.X, this->Y + relativePos.Y + 20));
-		Objects.at(i)->OnPaint();
-	}
+	Container::OnPaint();
 
 	glColor3f(0 / 255.0, 0 / 255.0, 0 / 255.0);
 	FillRectangle(X + relativePos.X, Y + relativePos.Y, Width, 20);
 	glColor3f(borderColor.r / 255.0, borderColor.g / 255.0, borderColor.b / 255.0);
 	DrawRectangle(X + relativePos.X, Y + relativePos.Y, Width, 20);
-	DrawString(title.getText(), X + relativePos.X + 5, Y + relativePos.Y + 14);
+	title->setRelativePos(getRelativePos());
+	title->OnPaint();
 
 }

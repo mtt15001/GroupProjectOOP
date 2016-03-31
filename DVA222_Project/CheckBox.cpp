@@ -37,7 +37,7 @@ void CheckBox::OnPaint(void)
 	else
 		DrawBitmap(*normal, X + relativePos.X, Y + relativePos.Y, Width, Height);
 
-	headLabel->setRelativePos(this->getRelativePos());
+	headLabel->setRelativePos(getRelativePos());
 	headLabel->OnPaint();
 }
 void CheckBox::OnMouseDown(int button, int x, int y)
@@ -49,7 +49,7 @@ void CheckBox::OnMouseDown(int button, int x, int y)
 }
 void CheckBox::OnMouseMove(int button, int x, int y)
 {
-	if (x>X && x < X + Width && y>Y && y < Y + Height)
+	if (x>X + relativePos.X && x < X + relativePos.X + Width && y>Y + relativePos.Y && y < Y + relativePos.Y + Height)
 		hit = true;
 	else
 	{

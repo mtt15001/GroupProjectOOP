@@ -37,5 +37,5 @@ void Label::DrawLabel()
 }
 void Label::OnPaint()
 {
-	this->DrawLabel();
+	DrawLabel();
 }

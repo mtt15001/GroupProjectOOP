@@ -37,7 +37,8 @@ void RadioButtonGroup::OnPaint() {
 		Objects.at(i)->OnPaint();
 	}*/
 	Container::OnPaint();
-
+	
+	title->setRelativePos(getRelativePos());
 	title->OnPaint();
 }
 

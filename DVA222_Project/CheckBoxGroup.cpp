@@ -22,9 +22,14 @@ void CheckBoxGroup::OnPaint()
 	FillRectangle(X + relativePos.X + 1, Y + relativePos.Y + 1, Width - 2, Height - 2);
 
 	Container::OnPaint();
+
+	title->setRelativePos(getRelativePos());
 	title->OnPaint();
 }
 void CheckBoxGroup::OnMouseDown(int button, int x, int y)
 {
-
+	for (size_t i = 0; i < Objects.size(); i++)
+	{
+		Objects.at(i)->OnMouseDown(button, x, y);
+	}
 }

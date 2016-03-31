@@ -41,15 +41,42 @@ int _tmain(int argc, char** argv)
 	MyColor.g = 255;
 	MyColor.r = 255;
 
-	RadioButtonGroup *RBGroup = new RadioButtonGroup(320, 100, 300, 150, Color(100, 255, 255), "RadioBoxGroup1");
-	RBGroup->AddObject(new RadioButton(10, 10, 20, 20, Color(0, 0, 0), "RadioButtonTest1"));
-	RBGroup->AddObject(new RadioButton(10, 35, 20, 20, Color(0, 0, 0), "RadioButton2.txt"));
-	RBGroup->AddObject(new RadioButton(10, 60, 20, 20, Color(0, 0, 0), "RadioButton2.txt"));
-	RBGroup->AddObject(new RadioButton(10, 85, 20, 20, Color(0, 0, 0), "RadioButton2.txt"));
-	RBGroup->AddObject(new RadioButton(10, 110, 20, 20, Color(0, 0, 0), "RadioButton2.txt"));
-	RadioButton *button = new RadioButton(20, 10, 400, 100,MyColor,"hej");
-	MyButton *mmh = new MyButton(40, 40, 200, 100);
-	InitOGL(argc, argv, RBGroup);
+	Button* button = new Button(10,10,120,80,Color());
+
+	RadioButtonGroup *RBGroup = new RadioButtonGroup(400, 60, 300, 150, Color(100, 255, 255), "RadioBoxGroup1");
+	RBGroup->AddObject(new RadioButton(10, 10, 20, 20, Color(0, 0, 0), "RadioButton 1"));
+	RBGroup->AddObject(new RadioButton(10, 35, 20, 20, Color(0, 0, 0), "RadioButton 2"));
+	RBGroup->AddObject(new RadioButton(10, 60, 20, 20, Color(0, 0, 0), "RadioButton 3"));
+	RBGroup->AddObject(new RadioButton(10, 85, 20, 20, Color(0, 0, 0), "RadioButton 4"));
+	RBGroup->AddObject(new RadioButton(10, 110, 20, 20, Color(0, 0, 0), "RadioButton 5"));
+	
+	CheckBoxGroup * CBGroup = new CheckBoxGroup(20, 60, 300, 150, Color(100, 255, 255), "CheckBoxGroup1");
+	CBGroup->AddObject(new CheckBox(10, 10, 20, 20, Color(0, 0, 0), "CheckBox 1"));
+	CBGroup->AddObject(new CheckBox(10, 35, 20, 20, Color(0, 0, 0), "CheckBox 2"));
+	CBGroup->AddObject(new CheckBox(10, 60, 20, 20, Color(0, 0, 0), "CheckBox 3"));
+	CBGroup->AddObject(new CheckBox(10, 85, 20, 20, Color(0, 0, 0), "CheckBox 4"));
+	CBGroup->AddObject(new CheckBox(10, 110, 20, 20, Color(0, 0, 0), "CheckBox 5"));
+
+	Panel *panel = new Panel(400, 400, 200, 80, Color(100, 255, 200));
+	Panel *panel2 = new Panel(450, 450, 200, 80, Color(50, 255, 50));
+	panel2->Add(button);
+
+	CheckBox *checkAlone = new CheckBox(60, 360, 20, 20, Color(), "StandAloneCheck");
+	RadioButton * radioAlone = new RadioButton(60, 400, 20, 20, Color(), "RadioAloneButton");
+
+	Window *myWindow = new Window(20, 20, 750, 550, Color(100, 200, 150), Color(100, 255, 255), "Window");
+	myWindow->Add(RBGroup);
+	myWindow->Add(CBGroup);
+	myWindow->Add(panel);
+	myWindow->Add(panel2);
+	myWindow->Add(checkAlone);
+	myWindow->Add(radioAlone);
+
+
+
+
+
+	InitOGL(argc, argv, myWindow);
 
 
 

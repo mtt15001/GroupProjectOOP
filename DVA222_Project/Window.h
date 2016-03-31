@@ -12,7 +12,7 @@ private:
 	int prevY;
 	Color borderColor;
 	Color bgColor;
-	Label title;
+	Label *title;
 public:
 	//ZControlbase array fylld med objekt. Initierar sedan ett window i main och skickar in det objektet i InitOGL
 	Window(int x, int y, int width, int height, Color background, Color border, string Title);
