@@ -41,7 +41,9 @@ int _tmain(int argc, char** argv)
 	MyColor.g = 255;
 	MyColor.r = 255;
 
-	Button* button = new Button(10,10,120,80,Color());
+	Button* button = new Button(30,60,140,70,Color());
+	ImageBox* picture = new ImageBox(30, 300, 350, 250, Color(0, 0, 0));
+	Label* Mylabel = new Label(250, 240, Color(255, 0, 0), "I'm just a standalone label");
 
 	RadioButtonGroup *RBGroup = new RadioButtonGroup(400, 60, 300, 150, Color(100, 255, 255), "RadioBoxGroup1");
 	RBGroup->AddObject(new RadioButton(10, 10, 20, 20, Color(0, 0, 0), "RadioButton 1"));
@@ -57,22 +59,24 @@ int _tmain(int argc, char** argv)
 	CBGroup->AddObject(new CheckBox(10, 85, 20, 20, Color(0, 0, 0), "CheckBox 4"));
 	CBGroup->AddObject(new CheckBox(10, 110, 20, 20, Color(0, 0, 0), "CheckBox 5"));
 
-	Panel *panel = new Panel(400, 400, 200, 80, Color(100, 255, 200));
-	Panel *panel2 = new Panel(450, 450, 200, 80, Color(50, 255, 50));
+	Panel *panel = new Panel(400, 280, 200, 140, Color(100, 255, 200));
+	Panel *panel2 = new Panel(550, 300, 200, 200, Color(0, 0, 0));
 	panel2->Add(button);
 
-	CheckBox *checkAlone = new CheckBox(60, 360, 20, 20, Color(), "StandAloneCheck");
-	RadioButton * radioAlone = new RadioButton(60, 400, 20, 20, Color(), "RadioAloneButton");
+	CheckBox *checkAlone = new CheckBox(20, 220, 20, 20, Color(), "StandAloneCheck");
+	RadioButton * radioAlone = new RadioButton(20, 250, 20, 20, Color(), "RadioAloneButton");
 
-	Window *myWindow = new Window(20, 20, 750, 550, Color(100, 200, 150), Color(100, 255, 255), "Window");
+	Window *myWindow = new Window(20, 20, 750, 550, Color(100, 255, 255), Color(100, 255, 255), "Ghetto Window with weird colors");
 	myWindow->Add(RBGroup);
 	myWindow->Add(CBGroup);
 	myWindow->Add(panel);
 	myWindow->Add(panel2);
 	myWindow->Add(checkAlone);
 	myWindow->Add(radioAlone);
+	myWindow->Add(picture);
+	myWindow->Add(Mylabel);
 
-
+	//100, 200, 150
 
 
 

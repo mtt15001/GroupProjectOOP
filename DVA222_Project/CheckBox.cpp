@@ -23,9 +23,9 @@ CheckBox::~CheckBox()
 }
 void CheckBox::OnLoaded()
 {
-	normal = new Bitmap("ButtonNorm.bmp");
-	hover = new Bitmap("ButtonHover.bmp");
-	press = new Bitmap("ButtonPressed.bmp");
+	normal = new Bitmap("checkbox_unchecked.bmp");
+	hover = new Bitmap("checkbox_hover.bmp");
+	press = new Bitmap("checkbox_checked.bmp");
 }
 
 void CheckBox::OnPaint(void)

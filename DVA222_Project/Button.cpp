@@ -40,9 +40,9 @@ void Button::OnPaint()
 }
 void Button::OnLoaded()
 {
-	normal = new Bitmap("ButtonNorm.bmp");
-	hover = new Bitmap("ButtonHover.bmp");
-	press = new Bitmap("ButtonPressed.bmp");
+	normal = new Bitmap("Let.bmp");
+	hover = new Bitmap("It.bmp");
+	press = new Bitmap("Go.bmp");
 }
 void Button::OnMouseDown(int button, int x, int y)
 {

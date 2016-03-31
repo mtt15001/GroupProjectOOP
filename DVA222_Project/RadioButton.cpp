@@ -32,7 +32,7 @@ void RadioButton::OnPaint()
 	if (pressed)
 		DrawBitmap(*press, X + relativePos.X, Y + relativePos.Y, Width, Height);
 	else if (hit)
-		DrawBitmap(*normal, X + relativePos.X, Y + relativePos.Y, Width, Height);
+		DrawBitmap(*hover, X + relativePos.X, Y + relativePos.Y, Width, Height);
 	else
 		DrawBitmap(*normal, X + relativePos.X, Y + relativePos.Y, Width, Height);
 
@@ -42,9 +42,9 @@ void RadioButton::OnPaint()
 }
 void RadioButton::OnLoaded()
 {
-	normal = new Bitmap("ButtonNorm.bmp");
-	hover = new Bitmap("ButtonHover.bmp");
-	press = new Bitmap("ButtonPressed.bmp");
+	normal = new Bitmap("radiobutton_normal.bmp");
+	hover = new Bitmap("radiobutton_hover.bmp");
+	press = new Bitmap("radiobutton_pressed.bmp");
 }
 void RadioButton::OnMouseDown(int button, int x, int y)
 {

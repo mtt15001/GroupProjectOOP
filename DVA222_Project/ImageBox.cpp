@@ -6,6 +6,7 @@ ImageBox::ImageBox()
 }
 ImageBox::ImageBox(int x, int y,int width,int height, Color color) : ZControlBase(x,y,width,height,color)
 {
+	relativePos = Point(0, 0);
 }
 ImageBox::~ImageBox()
 {
@@ -13,9 +14,10 @@ ImageBox::~ImageBox()
 }
 void ImageBox::OnLoaded()
 {
-	picture = new Bitmap("ButtonPressed.bmp");
+	picture = new Bitmap("picture.bmp");
 }
 void ImageBox::OnPaint()
 {
-	DrawBitmap(*picture, X, Y,Width,Height);
+	DrawBitmap(*picture, X + relativePos.X, Y + relativePos.Y, Width, Height);
+
 }
