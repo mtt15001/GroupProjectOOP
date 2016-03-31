@@ -75,6 +75,7 @@ void Window::OnMouseDown(int button, int x, int y)
 	{
 		Objects.at(i)->OnMouseDown(button, x, y);
 	}
+
 }
 
 
@@ -91,7 +92,6 @@ void Window::OnPaint(void)
 	FillRectangle(X + relativePos.X, Y + relativePos.Y, Width, 20);
 	glColor3f(borderColor.r / 255.0, borderColor.g / 255.0, borderColor.b / 255.0);
 	DrawRectangle(X + relativePos.X, Y + relativePos.Y, Width, 20);
-	title->setRelativePos(getRelativePos());
-	title->OnPaint();
+	DrawString(title->getText(), Y + relativePos.Y + 14, X + relativePos.X + 5);
 
 }
